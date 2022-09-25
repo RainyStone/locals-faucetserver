@@ -1,0 +1,19 @@
+{
+  "name": "locals-faucetserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.1",
+    "cors": "2.7.1",
+    "eth-lightwallet": "^2.3.1",
+    "ethers": "^5.4.4",
+    "express": "4.13.4",
+    "node-cache": "^5.1.2"
+  }
+}
