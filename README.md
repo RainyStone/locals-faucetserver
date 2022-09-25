@@ -1,6 +1,6 @@
 # 以太坊水龙头服务
 
-**项目代码原地址：**https://github.com/sponnet/locals-faucetserver
+**项目代码原地址**：https://github.com/sponnet/locals-faucetserver
 
 由于项目时间久远，原作者貌似很久没有维护了，因此按照原项目readme操作可能出现失败的情况，所以这里记录一下自己顺利让项目跑起来的步骤    (注意：以下操作步骤不是严格地按照时间顺序先后操作的，建议先把readme读完理清操作思路再进行搭建部署)
 
