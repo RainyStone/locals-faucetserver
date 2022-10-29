@@ -135,8 +135,7 @@ app.get(`/donate/${accesskey}/:address`, function (req, res) {
       setException(address, "greylist");
       return res.status(403).json({
         address: exception.address,
-        message:
-          "[钱包地址:IP] 组合已在灰名单中，请一天后再尝试领取测试币",
+        message: "钱包地址/IP 已在灰名单中，请一天后再尝试领取测试币",
       });
     }
     if (exception.reason === "blacklist") {

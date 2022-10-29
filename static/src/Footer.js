@@ -14,7 +14,7 @@ class Comp extends Component {
       <section className="section">
         <div className="content has-text-centered has-text-weight-light">
           <p>
-    区块链实验教育平台水龙头服务，每个 [钱包地址:IP] 组合每天可尝试领取测试币一次 
+    区块链实验教育平台水龙头服务，每个 钱包地址/IP 每天可尝试领取测试币一次 
 </p>
 <div className="level">
 <div className="level-item">
