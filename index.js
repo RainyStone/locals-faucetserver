@@ -131,8 +131,8 @@ app.get(`/donate/${accesskey}/:address`, function (req, res) {
     if (exception.reason === "greylist") {
       console.log(exception.key, "is on the greylist");
       // extend greylist
-      setException(ip, "greylist");
-      setException(address, "greylist");
+      // setException(ip, "greylist");
+      // setException(address, "greylist");
       return res.status(403).json({
         address: exception.address,
         message: "钱包地址/IP 已在灰名单中，请一天后再尝试领取测试币",
