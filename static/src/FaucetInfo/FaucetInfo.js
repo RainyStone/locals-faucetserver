@@ -52,7 +52,7 @@ const FaucetInfo = () => {
             thousandSeparator={true}
             suffix={" ETH"}
           />
-          。
+          )。
         </p>
       </div>
     </section>
