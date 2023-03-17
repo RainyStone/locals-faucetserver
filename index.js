@@ -111,6 +111,7 @@ app.get(`/donate/:address`, function (req, res) {
 
 // try to add an address to the donation queue
 app.get(`/donate/${accesskey}/:address`, function (req, res) {
+
   // Strip all spaces
   var address = req.params.address.replace(" ", "");
   try {
@@ -133,6 +134,7 @@ app.get(`/donate/${accesskey}/:address`, function (req, res) {
       // extend greylist
       // setException(ip, "greylist");
       // setException(address, "greylist");
+
       return res.status(403).json({
         address: exception.address,
         message: "钱包地址/IP 已在灰名单中，请一天后再尝试领取测试币",
@@ -154,8 +156,8 @@ app.get(`/donate/${accesskey}/:address`, function (req, res) {
   }
 
   q.push({ address });
-  setException(ip, "greylist");
-  setException(address, "greylist");
+  // setException(ip, "greylist");
+  // setException(address, "greylist");
   return res.status(200).json({ message: "request added to the queue" });
 });
 

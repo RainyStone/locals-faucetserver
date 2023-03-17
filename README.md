@@ -125,6 +125,6 @@ export default config;
 部署到服务器上时，由于node启动的服务一关闭终端就会自动停止，因此推荐使用pm2来进行node服务的开启与关闭
 
 - 查看已启动的服务：pm2 list
-- 启动服务：pm2 start index.js 1>../faucetserver.log 2>&1
-- 关闭服务：pm2 stop index
+- 启动服务：pm2 start index.js -n faucet-service -e err.log -o out.log    错误日志在err.log文件，一般输出日志在out.log文件
+- 关闭服务：pm2 stop faucet-service
 - 查看项目日志：pm2 log   因为没做特殊设置的话，即使在启动服务时指定日志目录，也只是将pm2自身的日志输出到该目录，而不是项目日志
